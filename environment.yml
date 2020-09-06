@@ -1,0 +1,32 @@
+name: pytorchrl2
+channels:
+    - https://conda.anaconda.org/soumith
+    - https://conda.anaconda.org/kne
+    - https://conda.anaconda.org/tlatorre
+    - https://conda.anaconda.org/cjs14
+    - https://conda.anaconda.org/menpo
+    - jjhelmus
+dependencies:
+    - python==3.5.4
+    - scipy
+    - mako
+    - path.py
+    - pybox2d
+    - pygame
+    - joblib
+    - theano
+    - pygpu
+    - pip:
+        - http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl; 'linux' in sys_platform
+        - torchvision
+        - numpy
+        - gym==0.9.3
+        - mujoco-py==0.5.7
+        - matplotlib==2.0.2
+        - cached_property
+        - pyprind
+        - boto3
+        - git+https://github.com/neocxi/Lasagne.git@484866cf8b38d878e92d521be445968531646bb8#egg=Lasagne
+        - tensorflow-gpu
+        - git+https://github.com/rll/rllab.git
+        - cloudpickle
