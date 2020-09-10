@@ -1,4 +1,4 @@
-name: pytorchrl2
+name: pytorchrl
 channels:
     - https://conda.anaconda.org/soumith
     - https://conda.anaconda.org/kne
@@ -16,6 +16,7 @@ dependencies:
     - joblib
     - theano
     - pygpu
+    - pip
     - pip:
         - http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl; 'linux' in sys_platform
         - torchvision
